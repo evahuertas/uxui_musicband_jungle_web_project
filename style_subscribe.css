@@ -20,6 +20,8 @@ body, html {
 header {
     position: relative;
     z-index: 1;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 video {
@@ -32,7 +34,12 @@ video {
     z-index: 0;
 }
 
-.header-block, nav {
+.header-block{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.header-logo, nav {
     /* position: relative; */
     z-index: 2;
 }
@@ -50,15 +57,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    /* font-size: 1.2em; */
 }
 
-/* Home landing_2_Autolayout */
 
-/* Auto layout */
-.header-block{
+/* nav buttons */
+.header-block:first-child{
     width: 100%;
-    height: 155px;
+    height: 160px;
     background-color: #69040080;
     display: flex-column;
     justify-content: center;
@@ -113,7 +118,7 @@ position: absolute;
 width: 218px;
 height: 77px;
 left: calc(50% - 218px/2 + 17px);
-top: calc(140% - 77px/2 + 453.5px);
+top: calc(145% - 77px/2 + 453.5px);
 
 background: #690400;
 border-radius: 11px;
@@ -174,13 +179,16 @@ flex-grow: 0;
 z-index: 9;
 }
 
+/* social net */
+
 aside {
     position: absolute;
     left: 53px;
-    top: 450px;
+    top: 470px;
 }
 
-/* Estilos del modal */
+/* modal */
+
 .modal {
     display: none; /* Oculto por defecto */
     position: fixed; /* Posición fija para el modal */
