@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing_basica.css">
+    <link
+      rel="icon"
+      href="https://seeklogo.com/images/R/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png"
+    />
+    <title>Landing basica</title>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <figure>
+          <img
+            class="logo-header"
+            src="https://seeklogo.com/images/R/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png"
+            alt="Logo de la lengua roja los Rolling Stones"
+          />
+        </figure>
+        <!-- Menú de Navegación -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Concerts</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen fondo con texto y CTA encima, con overlay para que se lea el texto -->
+    <section class="overlay-container">
+        <div class="container-img"></div>
+        <div class="overlay"></div>
+        <section class="content">
+          <h1>Título de la página</h1>
+          <button>Botón</button>
+        </section>
+    </section>  
+
+        <!-- Sección principal -->
+    <main>
+        <!-- Biografía -->
+        <section class="biografia">
+          <h2>Biografia de los Rolling Stones</h2>
+          <p>
+            Los Rolling Stones son una
+            <strong>banda británica de rock formada en Londres en 1962</strong>.
+            Considerados uno de los grupos más importantes e influyentes en la
+            historia de la música popular, han vendido más de
+            <strong>240 millones</strong> de discos en todo el mundo. La banda fue
+            formada por el guitarrista Brian Jones, el pianista Ian Stewart, el
+            cantante Mick Jagger y el guitarrista Keith Richards. Durante los años
+            60, los Rolling Stones se convirtieron en la antítesis de
+            <em>The Beatles</em>, con un estilo más rebelde y una imagen más
+            provocativa. Su música abarcaba una amplia gama de géneros, incluyendo
+            rock and roll, blues, rhythm and blues, soul y country. A lo largo de
+            su carrera, la banda ha lanzado numerosos álbumes aclamados por la
+            crítica y ha realizado incontables giras mundiales, consolidando su
+            estatus como una de las bandas más duraderas y exitosas de todos los
+            tiempos.
+          </p>
+        </section>
+
+ <!-- Formulario -->
+ <section class="formulario">
+    <form action="/submit" method="post" id="formulario_contacto">
+      <fieldset>
+        <legend>Datos para mandarte el álbum que quieras</legend>
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Introduce tu nombre"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Introduce tu email"
+          required
+        />
+        <label for="seleccion">Selección:</label>
+        <select id="seleccion" name="seleccion" required>
+          <option value="">Selecciona un álbum</option>
+          <option value="opcion1">Sticky Fingers - (1971)</option>
+          <option value="opcion2">Let It Bleed - (1969)</option>
+          <option value="opcion3">
+            Exile on Main St. - (1972)
+          </option></select
+        >
+        <button type="submit" value="Enviar">Enviar</button>
+
+      </fieldset>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="redes-sociales">
+          <li>
+            <a href="https://www.facebook.com" target="_blank"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/256/124/124010.png"
+                alt="Logo de facebook"
+                width="20rem"
+              />Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png"
+                alt="Logo de instagram"
+                width="20rem"
+              />Instagram</a
+            >
+          </li>
+        </ul>
+        <p>Dirección: Calle Artista, 123</p>
+        <p>Teléfono: 123-456-789</p>
+        <p>
+          <small
+            >&copy; 2024 Nombre del Artista. Todos los derechos reservados.</small
+          >
+        </p>
+      </footer>
+
+
+</body>
+</html>

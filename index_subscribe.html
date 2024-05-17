@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_subscribe.css">
+    <link
+    rel="icon"
+    href="https://static.vecteezy.com/system/resources/previews/001/206/675/non_2x/rock-music-icon-vinyl-record-png.png"
+    />
+    <title>Jungle - Subscribe</title>
+</head>
+<body>
+    <!-- video -->
+    <video  autoplay muted loop>
+        <source src="assets/video/video-web-jungle.mp4" type="video/mp4">
+    </video>
+    <header>
+        <!-- Logo -->
+        <div class="header-block">
+            <figure>
+                <a href="landing_basica.html">
+                    <img
+                        class="logo-header"
+                        src="/assets/img/logoJungle_white.png"
+                        alt="Logo de la banda Jungle"
+                    />
+                </a>
+            </figure>
+        </div>
+        <!-- Menú de Navegación -->
+        <nav class="header-nav">
+            <ul>
+                <li><button class="btn-nav"><a href="#">Music</a></button></li>
+                <li><button class="btn-nav"><a href="#">Concerts</a></button></li>
+                <li><button class="btn-nav"><a href="#">Store</a></button></li>
+            </ul>
+        </nav>
+
+        <!-- redes sociales -->
+        <aside>
+            <a href="https://www.tiktok.com/@jungle4eva" target="_blank"><img src="assets/icons/tiktok-2.png" alt=""></a>
+            <a href="https://www.instagram.com/jungle4eva/" target="_blank"><img src="assets/icons/instagram-1.png" alt=""></a>
+            <a href="https://www.facebook.com/jungle4eva" target="_blank"><img src="assets/icons/facebook-1.png" alt=""></a>
+            <a href="https://twitter.com/jungle4eva" target="_blank"><img src="assets/icons/twitterx-1.png" alt=""></a>
+        </aside>
+        
+        <button class="btn-subscr" onclick="openModal()">
+            <a href="">Subscribe</a>
+        </button>
+        
+    </header>
+    
+    <!-- modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img src="assets/icons/x-mark-solid-1.png" alt="close button" class="close">
+            <h2>Join our email list</h2>
+            <p>Be the first to know what Jungle is up to! Lives, 
+                new releases and more straight to your inbox.</p>
+            <input class="subscr-input" type="email" placeholder="your@email.com" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
+    <script src="script_subscribe.js"></script>
+</body>
+</html>
