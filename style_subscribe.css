@@ -55,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
 
@@ -103,9 +103,18 @@ button{
     background: #690400;
     border-radius: 11px;
 }
-
-/* Frame 1000004194 */
-
+button:hover{
+    background-color: #FFFFFF;
+    color:  #690400 !important;
+font-weight: 400;
+}
+button:active{
+    background-color: #FFFFFF;
+    color:  #690400 !important;
+    /* font-weight: 700; */
+    border:#690400 solid 4px ;
+    outline: #FFFFFF solid 1px;
+}
 button.btn-subscr {
 display: flex;
 flex-direction: row;
@@ -115,12 +124,12 @@ padding: 10px;
 gap: 10px;
 
 position: absolute;
-width: 218px;
-height: 77px;
-left: calc(50% - 218px/2 + 17px);
-top: calc(145% - 77px/2 + 453.5px);
+width: 368px;
+height: 61px;
+left: calc(50% - 368px/2);
+top: calc(145% - 61px/2 + 448.5px);
 
-background: #690400;
+/* background: #690400; */
 border-radius: 11px;
 
     color: #FFFFFF;
@@ -217,7 +226,7 @@ height: 189px;
 left: 826px;
 top: 543px;
 
-background: #FFFFFF;
+background-color: #FFFFFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 13px;
 
@@ -254,3 +263,5 @@ border: 1px solid #690400;
 border-radius: 8px;
 
 }
+
+
